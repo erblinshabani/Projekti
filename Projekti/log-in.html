@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background-color: rgba(253, 199, 208, 0.324);
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        .container {
+            padding: 20px 70px;
+            background-color: rgba(154, 2, 154, 0.251);
+            border-radius: 15px;
+        }
+
+        .container h1 {
+            padding: 10px;
+            margin: 0 0 50px 0;
+            text-align: center;
+            border-bottom: 1px solid rgb(147, 9, 115);
+        }
+
+        form input[type=text], form input[type=password] {
+            display: block;
+            margin: 10px 0;
+            width: 380px;
+            height: 35px;
+            font-size: 16px;
+        }
+
+        form div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.244);
+            padding: 2px;
+        }
+        
+        form div label {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form div input[type=checkbox] {
+            width: 25px;
+            align-items: center;
+            height: 25px;
+        }
+
+        form input[type=submit] {
+            border: 0;
+            width: 100%;
+            margin-top: 15px;
+            padding: 7px 0;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form input[type=submit]:hover {
+            background-color: lightblue;
+            transition: all 0.2;
+        }
+        
+        .container p{
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .container p a {
+            text-decoration: none;
+            color: blue
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Log In</h1>
+            <form action="" id="log-in-forn">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <p id="username-error" style="color: red; margin: 0px; font-weight: 500; font-family: Arial, Helvetica, sans-serif; display: none;">Incorrect Username</p>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <p id="password-error" style="color: red; margin: 0px; font-weight: 500; font-family: Arial, Helvetica, sans-serif; display: none;">Incorrect Password</p>
+                <div style="margin-top: 20px;">
+                    <label for="not-robot">I Am Not A Robot</label>
+                    <input id="not-robot" name="not-robot" type="checkbox" required>
+                </div>
+                <input type="submit" value="Log In">
+            </form>
+            
+            <p>Don't have an account? <a href="./register.html">Sign up</a></p>
+        </div>
+    </main>
+
+    <script>
+        const logInForm = document.getElementById('log-in-forn');
+
+        logInForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const usernameVal = document.getElementById('username').value
+            const passwordVal = document.getElementById('password').value
+
+            if (usernameVal === localStorage.getItem('username') && (passwordVal === localStorage.getItem('password'))) {
+                alert("Log In Successful");
+                
+                document.getElementById('username-error').style.display = "none"
+                document.getElementById('password-error').style.display = "none";
+
+                window.open('./index.html')
+            } else {
+                document.getElementById('username-error').style.display = "block"
+                document.getElementById('password-error').style.display = "block"
+            }
+        })
+    </script>
+</body>
+</html>

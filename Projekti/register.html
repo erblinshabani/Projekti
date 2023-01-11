@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background-color: rgba(253, 199, 208, 0.324);
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        
+        .container {
+            padding: 20px 70px;
+            background-color: rgba(154, 2, 154, 0.251);
+            border-radius: 15px;
+        }
+
+        .container h1 {
+            padding: 10px;
+            margin: 0 0 50px 0;
+            text-align: center;
+            border-bottom: 1px solid rgb(147, 9, 115);
+        }
+
+        form input[type=text], form input[type=password], form input[type=email] {
+            display: block;
+            margin-top: 10px;
+            width: 350px;
+            height: 33px;
+            font-size: 16px;
+        }
+
+        .gender {
+            display: flex;
+            align-items: center;
+        }
+        
+         form label {
+            font-size: 19px;
+            padding: 0 50px 0 5px;
+        }
+
+        form input[type=radio] {
+            margin: 25px;
+            width: 17px;
+            height: 17px;
+        }
+
+        form input[type=submit] {
+            border: 0;
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form input[type=submit]:hover {
+            background-color: lightblue;
+            transition: all 0.2;
+        }
+
+        .container p{
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .container p a {
+            text-decoration: none;
+            color: blue
+        }
+    </style>
+</head>
+<body>
+    <button style="position: absolute; top: 5px; right: 10px" id="hello">Hello</button>
+    <main>
+        <div class="container">
+            <h1>Register</h1>
+            <form action="" id="register-form">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="surname" name="surname" placeholder="Surname" required>
+                <input type="text" id="username" name="username" placeholder="Username" required/>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="gender">
+                    <input type="radio" class="genderVal" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" class="genderVal" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label><br />
+                </div>
+                <input id="create-account-btn" type="submit" value="Create My Account">
+            </form>
+            
+            <p id="ne" class="neanna">Have An Account? <a href="./log-in.html">Log In</a></p>
+        </div>
+    </main>
+
+    <script>
+        const name = document.getElementById('name')
+        const surname = document.getElementById('surname')
+        const username = document.getElementById('username')
+        const email = document.getElementById('email')
+        const password = document.getElementById('password');
+        const registerForm = document.getElementById('register-form')
+
+        registerForm.addEventListener('submit', () => {
+            data()
+        })
+        const data = () => {
+            localStorage.setItem('name', name.value);
+            localStorage.setItem('surname', surname.value);
+            localStorage.setItem('username', username.value);
+            localStorage.setItem('email', email.value);
+            localStorage.setItem('password', password.value);
+        }
+
+        const hello = document.getElementById('hello');
+
+        hello.addEventListener('click', () => {
+            alert("Hello! Welcome")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xizt</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        alert("Welcome")
+    </script>
+</head>
+<body>
+    <nav>
+        <h1 id="company-name">Xizt</h1>
+        <div class="nav-list" id="nav-list">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="./new.html">New</a></li>
+                <li><a href="./tickets.html">Tickets</a></li>
+                <li><a href="./contact-us.html">Get In Touch</a></li>
+            </ul>
+            <ul class="sign-in" id="sign-in">
+                <li id="register-btn"><a href="./register.html">Register</a></li>
+                <li id="log-in-btn"><a href="./log-in.html">Log In</a></li>
+            </ul>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header>
+        <div class="description">
+            <h1>Sahara</h1>
+            <p style="font-family:Georgia, 'Times New Roman', Times, serif; line-height: 17px"><font size="5">The<sup> Sahara </sup></font> Desert is the largest hot desert in the world and is a bucket-list destination for many. The idea of spending a night in a camp under millions of stars and climbing sand dunes to watch the sunset is definitely an attractive one.            </p>
+            <button id="link-btn" onclick='location.href="./register.html"'>Travel Around The World</button>
+        </div>
+        <div class="col-images">
+            <div class="col-cart" style="background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.3)), url('./images/hawaii.jpg');">
+                <h4>Hawaii</h4>
+                <p>World-class beaches, pristine rainforests, and sizzling volcanoes</p>
+            </div>
+            <div class="col-cart" style="background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.3)), url('./images/meteora-greece.jpg');">
+                <h4>Meteora / Greece</h4>
+                <p>It's the combination of natural beauty with monasteries and religious traditions</p>
+            </div>
+            <div class="col-cart" style="background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.3)), url('./images/socotra-yemen.jpg');">
+                <h4>Socotra / Yemen</h4>
+                <p>
+                    The island is well known for its Dragon Blood Trees and its surreal landscapes full of towering sand dunes
+                </p>
+            </div>
+            <div class="col-cart" style="background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.3)), url('./images/french-polynesia.jpg');">
+                <h4>French Polynesia</h4>
+                <p>
+                    With diverse marine life, some of the world's best diving, incredible natural beauty, and a heavy vanilla    
+                </p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="home-nav">
+        <ul class="home-nav-menu">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#trip">Trip</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#couples">Couples</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main id="menu">
+        <h2>Featured</h2>
+        <h1>The Most <span id="beautiful">Beautiful</span> Places!</h1>
+        <div class="places">
+            <div class="cart">
+                <div class="background-image" style="background-image: url('./images/berlin.jpg')"></div>
+                <div class="country-price">
+                    <h2>Berlin</h2>
+                    <h3>150$</h3>
+                </div>
+                <div class="places-description">
+                    <p>
+                        Berlin is the ideal place for a city break in Europe. Ticking all the boxes, the buzzing metropolis boasts a killer nightlife scene, amazing local food, a rich history, world famous beer and some of the most remarkable sights and museums in the world
+                    </p>
+                    <button>Visit Right Know</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="background-image" style="background-image: url('./images/turkey.jpg')"></div>
+                <div class="country-price">
+                    <h2>Istanbul</h2>
+                    <h3>100$</h3>
+                </div>
+                <div class="places-description">
+                    <p>
+                        Istanbul has it all: over <mark>2500</mark> years of history, culture, and traditions, amazing landmarks, vibrant nightlife, and breathtaking views. This transcontinental metropolis is a fast-paced cultural melting pot you can't afford to miss.The most famous landmarks are Hagia Sophia tour, the house of the Ottoman Sultans: Topkapı Palace, with its blue ceramics:
+                    </p>
+                    <button>Visit Right Know</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="background-image" style="background-image: url('./images/vienna.jpg')"></div>
+                <div class="country-price">
+                    <h2>Vienna</h2>
+                    <h3>120$</h3>
+                </div>
+                <div class="places-description">
+                    <p>
+                        If you're looking for a travel destination that has it all, look no further than Vienna, the capital of Austria. Vienna is one of the most beautiful cities in Europe. It's a great city for shopping, dining, and sightseeing. The City of Vienna offers an incredible mix of culture, food and history.
+                    </p>
+                    <button>Visit Right Know</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="trip">
+        <img src="./images/travel-with-us.png" width="970px" height="550px" alt="Travel With Us" title="travel-with-us">
+        <div class="section-text">
+            <h1>Plan Your Trip<br /> <i id="with-us">With Us</i></h1>
+            <p>Our role is to help you plan, choose and arrange your holiday.
+                We also offer advice and opinions on where to go and local tourist attractions, events and customs<br /><br />
+                <b>If you want to get safe travel. Plan your trip</b>
+            </p>
+            <a href="./register.html" class="travel-link">Travel Now</a>
+        </div>
+    </section>
+
+    <article id="offers">
+        <div class="our-offers">
+            <div class="offer">
+                <img src="./images/Instanbul.jpg" alt="Istanbul" title="Istanbul">
+                <div class="offer-text">
+                    <h3>Istanbul</h3>
+                    <p class="offer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni quia.</p>
+                    <div class="price">
+                        <button onclick='location.href="./register.html"'>Reserve Now</button>
+                        <p>
+                            <sub><del>100$</del></sub>
+                            <span>50$</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="./images/paris.jpg" alt="Berlin" title="Berlin">
+                <div class="offer-text">
+                    <h3>Paris</h3>
+                    <p class="offer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni quia.</p>
+                    <div class="price">
+                        <button onclick='location.href="./register.html"'>Reserve Now</button>
+                        <p>
+                            <sub><del>300$</del></sub>
+                            <span>150$</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-offers">
+            <h1>Best Travel Offer</h1>
+            <h3 style="font-weight: 500; font-size: 24px;">Get your offer right now with 50% off!</h3>
+            <p>What Services We Offer:</p>
+            <ol>
+                <li>Flights
+                    <ul style=" margin: 6px 0;">
+                        <li style="font-size: 14px;">Morning</li>
+                        <li style="font-size: 14px;">Night</li>
+                    </ul>
+                </li>
+                <li>Hotel Stays</li>
+                <li>Airport Transfers</li>
+                <li>Travel Insurance</li>
+                <li>Tourism Activities</li>
+            </ol>
+            <button onclick='location.href="./register.html"'>Get The Offer</button>
+        </div>
+    </article>
+
+    <div id="couples">
+        <div class="travel-for-couples">
+            <img class="first-couple-image" src="./images/romantic1.jpg" alt="">
+            <div>
+                <h1>Tickets For Couples</h1>
+                <hr />
+                <h2>Travel With Your Love Person</h2>
+                <p>Love is the food of life, travel is dessert</p>
+                <button onclick='location.href="./register.html"'>Get Ticket Now</button>
+            </div>
+            <img class="second-couple-image" src="./images/romantic.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="information-table" id="info">
+        <div class="tables">
+            <h1><u>Table Informations</u></h1>
+            <table cellpadding="1px" cell-margin="1px">
+                <tr>
+                    <th>Rank</th>
+                    <th>Place</th>
+                    <th>Visitors</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Istanbul</td>
+                    <td>56 481</td>
+                    <td>948 545</td>
+                </tr>
+                <tr style="background-color: rgba(172, 172, 172, 0.128)">
+                    <td>2</td>
+                    <td>Berlin</td>
+                    <td>34 890</td>
+                    <td>864 841</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Paris</td>
+                    <td>26 045</td>
+                    <td>794 415</td>
+                </tr>
+                <tr style="background-color: rgba(172, 172, 172, 0.128)">
+                    <td>4</td>
+                    <td>Antalya</td>
+                    <td>22 464</td>
+                    <td>645 649</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>London</td>
+                    <td rowspan="2">16 450</td>
+                    <td>400 864</td>
+                </tr>
+                <tr style="background-color: rgba(172, 172, 172, 0.128)">
+                    <td>6</td>
+                    <td>Dubrovnik</td>
+                    <td>348 467</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Stockholm</td>
+                    <td>7 645</td>
+                    <td>294 315</td>
+                </tr>
+                <tr class="total-table-information">
+                    <td colspan="3">Total</td>
+                    <td>3 939 346</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <address>
+            <ul>
+                <li>Click To Go To Profile</li>
+                <li><a href="https://www.instagram.com/erblin.shabanni" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/erblincr7">Facebook</a></li>
+                <li><a href="https://www.gmail.com" target="_blank">Email</a></li>
+            </ul>
+        </address>
+        <img src="./images/company.jpg" alt="">
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
